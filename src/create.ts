@@ -63,11 +63,11 @@ const main = async () => {
   // create post and add multiple category
   const createPost = await prisma.post.create({
     data: {
-      title: "This is title 5",
-      content: "This is content 5",
+      title: "This is subTitle 6",
+      content: "This is content 6",
       authorId: 3,
       postCategory: {
-        create: [{ categoryId: 1 }, { categoryId: 4 }, { categoryId: 3 }],
+        create: [{ categoryId: 1 }, { categoryId: 4 }],
       },
     },
     // show post category data
